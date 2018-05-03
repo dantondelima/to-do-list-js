@@ -1,43 +1,58 @@
 html {
-    height: 100%;
-    overflow: hidden;
+  height: 100%;
+  overflow: hidden;
 }
 
-body{
-    color: lightgreen;
-    margin:0;
-    padding: 0;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    height: 100%;
-    overflow-x: hidden;
+body { 
+  margin:0;
+  padding:0;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  perspective: 1px;
+  font-family: Verdana;
 }
 
 header {
-    box-sizing: border-box;
-    padding: 30vw 0 5vw;
-    position: relative;
-    transform-style: inherit;
-    width: 100vw;
-    height: 100%;
-    background-image: url("../imgs/mayfly1.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: Verdana;
-    transform-origin: center center 0;
-    transform: translateZ(-1px) scale(2);
-    z-index: -1;
+  background-image: url("../imgs/mayfly1.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
 }
 
-h1{
-    font-size: 4rem;
-    text-align: center;
+.text {
+  text-align: center;
+  font-size: 250%;
+  padding-top: 50vh; 
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
 }
 
-main{
-    background-color: lightgreen;
-    height: 100%;
+.section {
+  position: relative;
+  padding: 13% 10%;
+  min-height: 100%;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, .7), 0 -5px 1px rgba(0, 0, 0, .7);
+  background: 50% 50% / cover;
 }
 
+.primeira {
+  background-color: darkorange;
+}
+
+.segunda {
+  background-image: url(../imgs/escritorio2.jpg);
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+}
+
+
+@media only screen and (max-device-width: 1366px) {
+    .slide {
+        background-attachment: scroll;
+    }
+}
