@@ -34,6 +34,13 @@ img {vertical-align: middle;}
   top: 0;
 }
 
+.dots{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  margin-top:-12vh;
+}
+
 /* The dots/bullets/indicators */
 .dot {
   height: 15px;
