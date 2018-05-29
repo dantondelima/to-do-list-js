@@ -7,34 +7,44 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/carousel.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+    <link rel="icon" href="imgs/icone.ico"/>
     <title>Mayfly - Lista de tarefas</title>
 </head>
 <body>
+    <header>
+        <div class="logo"><img class="logo" src="imgs/logo.png" alt="logo"></div>
+        <div class="nome">M a y F l y</div>
+        <div class="sobre"> <a href="sobre.html">Sobre</a></div>
+        <div class="acessar"><a href="lista_de_tarefas.html">Ir para a Lista de tarefas</a></div>
+    </header>
     <div class="slideshow-container">
         <div class="slide fade">
-            <img src="imgs/mayfly1.jpg">
+            <img class = "fundo" src="imgs/mayfly1.jpg">
             <div class="texto">Caption Text</div>
         </div>
 
         <div class="slide fade">
-            <img src="imgs/mayfly2.jpg">
+            <img class = "fundo" src="imgs/mayfly2.jpg">
             <div class="texto">Caption Two</div>
         </div>
     
         <div class="slide fade">
-            <img src="imgs/mayfly3.jpg">
+            <img class = "fundo" src="imgs/mayfly3.jpg">
             <div class="texto">Caption Three</div>
         </div>
     
+        
+
     </div>
 
     <br>
-    
     <div class="menu-indices" style="text-align:center">
         <span class="indice"></span>
         <span class="indice"></span>
         <span class="indice"></span>
     </div>
+    
 
 
     <section class="primeira section">
@@ -43,6 +53,7 @@
     <section class="segunda section">
         <p class="texto">Lista de tarefas útil e inteligente</p>
     </section>
-    <script src="js/index.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/efeitos.js"></script>
 </body>
 </html>

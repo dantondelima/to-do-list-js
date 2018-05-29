@@ -1,7 +1,8 @@
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
-img {
+
+.fundo {
   vertical-align: middle;
   width:100vw; 
   min-height: 100vh;
@@ -30,10 +31,11 @@ img {
 }
 
 .menu-indices{
-  position: absolute;
+  position: relative;
   z-index: 1;
   width: 100%;
   margin-top:-12vh;
+  margin-bottom: 55px;
 }
 
 /* The dots/bullets/indicators */
